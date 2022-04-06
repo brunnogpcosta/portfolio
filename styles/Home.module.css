@@ -1,6 +1,166 @@
 .container {
   padding: 0 2rem;
+  
 }
+
+.subtitle {
+  color: #0070f3;
+  text-shadow: 0px 1px 1px #000;
+}
+
+.idiomas{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+ 
+}
+
+.idiomas ul {
+  margin-right: 40px;
+  width: 230px;
+  display: flex;
+  animation-name: idioma-flags;
+  animation-duration: 1s;
+  opacity: 100%;
+  justify-content: space-between;
+ 
+
+
+}
+
+
+.idiomas ul li{
+text-decoration: none;
+ display: inline-block;
+ height: 90px;
+
+}
+
+.idiomas ul li:hover{
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border: solid 5px #000;
+  border-radius: 100%;
+
+
+}
+
+
+.idiomas ul li:checked{
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border: solid 5px rgb(43, 8, 238);
+  border-radius: 100%;
+
+
+}
+
+
+
+@keyframes titulo {
+  0% {
+    font-size: 10px;
+    left: 200px;
+    top: 0px;
+ 
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+    
+  }
+}
+
+
+
+
+@keyframes idioma-flags {
+  0% {
+    width: 100%; opacity: 0%;
+  }
+
+  25% {
+    color: #f3f3f3;
+    left: 0px;
+    top: 0px;
+    opacity: 25%;
+    
+  }
+
+  50% {
+    color: rgb(109, 109, 109);
+    right: 0px;
+    top: 0px;
+    opacity: 50%;
+    width: 200px;
+    
+  }
+
+  100% {
+    color: rgb(58, 58, 58);
+    left: 0px;
+    top: 0px;
+    opacity: 100%;
+   
+  }
+}
+
+
+
+@keyframes botao {
+  0% {
+    color: #f3f3f3;
+    left: 0px;
+    top: 100px;
+  }
+
+  25% {
+    color: #f3f3f3;
+    left: 0px;
+    top: -30px;
+  }
+
+  50% {
+    color: rgb(109, 109, 109);
+    right: 200%;
+    top: 0px;
+  }
+
+  100% {
+    color: rgb(58, 58, 58);
+    left: 0px;
+    top: 0px;
+  }
+}
+
+
+
+.acessar {
+  width: 100px;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+  border: none;
+  font-size: large;
+  border-radius: 5%;
+  position: relative;
+  animation-name: botao;
+  animation-duration: 2s;
+  background-color: #f3f3f3;
+  color: #494949;
+  box-shadow: 0px 0px 2px rgb(134, 134, 134);
+}
+
+.acessar:hover {
+box-shadow: 0px 0px 2px #000;
+color: #000;
+}
+
+
 
 .main {
   min-height: 100vh;
@@ -43,6 +203,10 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  text-shadow: 0px 1px 1px #0070f3;
+  animation-name: titulo;
+  animation-duration: 1s;
+
 }
 
 .title,

@@ -35,7 +35,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" style={{ background: '#000' }}>
+    <AppBar position="static" style={{ background: '#000', boxShadow: 'none' }}>
       <Container maxWidth="xl"  >
         <Toolbar disableGutters >
                    
@@ -45,7 +45,7 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'left' } }}
           >
-            LOGO
+       {`< `}Brunno Costa{` >`}
           </Typography>
          
           <Box sx={{ flexGrow: 0 }}>

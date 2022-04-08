@@ -44,12 +44,24 @@ export default function MenuListComposition() {
   }, [open]);
 
   return (
-    <Stack direction="row" spacing={2}>
+    <Stack direction="row" spacing={0} style={{ background: '#f3f3f3'}}>
       <Paper>
-        <MenuList>
-          <MenuItem>Profile</MenuItem>
-          <MenuItem>My account</MenuItem>
-          <MenuItem>Logout</MenuItem>
+        <MenuList style={{position: 'relative',top:'-7px', width:'150px', height:'90vh', borderRight:'1px solid #5e5e5e'}}>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Sobre Mim</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Trabalhos</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Jogos</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Skills</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Currículo</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Sonhos</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Contato</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Javascript</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Sobre Mim</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Trabalhos</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Jogos</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Skills</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #000'}}>Currículo</MenuItem>
+      
+ 
         </MenuList>
       </Paper>
      

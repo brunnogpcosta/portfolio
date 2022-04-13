@@ -8,7 +8,7 @@ export default function Inicio() {
         <>
             <Menu />
 
-            <div className='separa' style={{display:'flex', justifyContent: 'space-between', backgroundColor: '#f3f3f3'}}>
+            <div className='separa' style={{display:'flex', justifyContent: 'space-between'}}>
             <MenuLateral />
             <Conteudo/>
 

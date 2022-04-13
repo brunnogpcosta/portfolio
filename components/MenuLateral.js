@@ -42,20 +42,20 @@ export default function MenuListComposition() {
   return (
     <Stack direction="row" spacing={2}>
       <Paper >
-        <MenuList style={{position: 'fixed',top:'64px',bottom:'0px', width:'150px', height:'91.5%', borderRight:'1px solid #5e5e5e',background: '#46b6d2'}}>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Sobre Mim</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Trabalhos</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Jogos</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Skills</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Currículo</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Sonhos</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Contato</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Javascript</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Sobre Mim</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Trabalhos</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Jogos</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Skills</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #000', fontWeight:'bolder'}}>Currículo</MenuItem>
+        <MenuList style={{position: 'fixed',top:'64px',bottom:'0px', width:'150px', height:'91.5%', borderRight:'1px solid #5e5e5e',background: '#46b6d2', boxShadow:'1px 1px 5px #a3a3a3'}}>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Sobre Mim</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Trabalhos</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Jogos</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Skills</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Currículo</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Sonhos</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Contato</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Javascript</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Sobre Mim</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Trabalhos</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Jogos</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Skills</MenuItem>
+          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Currículo</MenuItem>
       
  
         </MenuList>

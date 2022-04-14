@@ -23,7 +23,7 @@ export default function MenuListComposition() {
       <Paper >
         <MenuList style={{ position: 'fixed', top: '64px', bottom: '0px', width: '150px', height: '91.5%', borderRight: '1px solid #5e5e5e', background: '#46b6d2', boxShadow: '1px 1px 5px #a3a3a3' }}>
           {menu.map((men) => men == palavra ?
-            <MenuItem key={men} style={{ borderBottom: '1px solid #4747', fontWeight: 'bolder', position: 'relative', top: '-8px', width: '150px', background: '#276b7c', justifyContent: 'center',borderRight: '1px solid #5e5e5e',  animationName: 'idioma-flags',animationDuration: '1s' }} onClick={() => handleListKeyDown(men)}>{men}</MenuItem>
+            <MenuItem key={men} style={{ borderBottom: '1px solid #4747', fontWeight: 'bolder', position: 'relative', top: '-8px', width: '150px', background: '#276b7c', justifyContent: 'center',borderRight: '1px solid #5e5e5e', textShadow:'#CCC 0px 0 2px'}} onClick={() => handleListKeyDown(men)}>{men}</MenuItem>
             :
             <MenuItem key={men} style={{ borderBottom: '1px solid #4747', fontWeight: 'bolder', position: 'relative', top: '-8px', width: '150px', background: '#46b6d2', justifyContent: 'center' ,borderRight: '1px solid #5e5e5e'}} onClick={() => handleListKeyDown(men)}>{men}</MenuItem>
 

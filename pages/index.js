@@ -1,8 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useRouter } from 'next/router'
+
 
 export default function Home() {
+  const router = useRouter()
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -26,7 +31,7 @@ export default function Home() {
         </h1>
         <h2 className={styles.subtitle}>Portfólio Oficial</h2>
 
-        <button className={styles.acessar}>Acessar</button>
+        <button className={styles.acessar} onClick={() => router.push('/inicio')}>Acessar</button>
       </main>
 
     </div>

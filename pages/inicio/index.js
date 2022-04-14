@@ -7,13 +7,11 @@ export default function Inicio() {
     return (
         <>
             <Menu />
-
-            <div className='separa' style={{display:'flex', justifyContent: 'space-between'}}>
-            <MenuLateral />
-            <Conteudo />
-
+            <div className='separa' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <MenuLateral />
+                <Conteudo />
             </div>
-            
+
 
         </>
 

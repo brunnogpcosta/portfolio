@@ -5,62 +5,32 @@ import MenuList from '@mui/material/MenuList';
 import Stack from '@mui/material/Stack';
 
 export default function MenuListComposition() {
-  const [open, setOpen] = React.useState(false);
-  const anchorRef = React.useRef(null);
 
-  const handleToggle = () => {
-    setOpen((prevOpen) => !prevOpen);
-  };
+  const menu = ["Item A", "Item B", "Item C", "Item D", "Item E", "Item F"]
+  const [palavra, SetPalavra] = React.useState("")
 
-  const handleClose = (event) => {
-    if (anchorRef.current && anchorRef.current.contains(event.target)) {
-      return;
-    }
-
-    setOpen(false);
-  };
 
   function handleListKeyDown(event) {
-    if (event.key === 'Tab') {
-      event.preventDefault();
-      setOpen(false);
-    } else if (event.key === 'Escape') {
-      setOpen(false);
-    }
+    console.log(event)
+
+    SetPalavra(event)
+    //, width: '300px', borderRight: '1px solid #5e5e5e', background: '#46b6d2', justifyContent: 'right' 
   }
 
-  // return focus to the button when we transitioned from !open -> open
-  const prevOpen = React.useRef(open);
-  React.useEffect(() => {
-    if (prevOpen.current === true && open === false) {
-      anchorRef.current.focus();
-    }
-
-    prevOpen.current = open;
-  }, [open]);
 
   return (
     <Stack direction="row" spacing={2}>
       <Paper >
-        <MenuList style={{position: 'fixed',top:'64px',bottom:'0px', width:'150px', height:'91.5%', borderRight:'1px solid #5e5e5e',background: '#46b6d2', boxShadow:'1px 1px 5px #a3a3a3'}}>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Sobre Mim</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Trabalhos</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Jogos</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Skills</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Currículo</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Sonhos</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Contato</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Javascript</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Sobre Mim</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Trabalhos</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Jogos</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Skills</MenuItem>
-          <MenuItem style={{borderBottom:'1px solid #474747', fontWeight:'bolder'}}>Currículo</MenuItem>
-      
- 
+        <MenuList style={{ position: 'fixed', top: '64px', bottom: '0px', width: '150px', height: '91.5%', borderRight: '1px solid #5e5e5e', background: '#46b6d2', boxShadow: '1px 1px 5px #a3a3a3' }}>
+          {menu.map((men) => men == palavra ?
+            <MenuItem key={men} style={{ borderBottom: '1px solid #4747', fontWeight: 'bolder', position: 'relative', top: '-8px', width: '150px', background: '#276b7c', justifyContent: 'center',borderRight: '1px solid #5e5e5e',  animationName: 'idioma-flags',animationDuration: '1s' }} onClick={() => handleListKeyDown(men)}>{men}</MenuItem>
+            :
+            <MenuItem key={men} style={{ borderBottom: '1px solid #4747', fontWeight: 'bolder', position: 'relative', top: '-8px', width: '150px', background: '#46b6d2', justifyContent: 'center' ,borderRight: '1px solid #5e5e5e'}} onClick={() => handleListKeyDown(men)}>{men}</MenuItem>
+
+          )}
         </MenuList>
       </Paper>
-     
+
     </Stack>
   );
 }

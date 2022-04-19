@@ -34,7 +34,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" style={{ background: '#000', boxShadow:'1px 1px 5px #a3a3a3'}}>
+    <AppBar position="static" style={{ background: '#fff', boxShadow:'1px 1px 5px #a3a3a3'}}>
       <Container maxWidth="xl"  >
         <Toolbar disableGutters >
 
@@ -42,7 +42,8 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'left' } }}
+            sx={{  color: '#000',flexGrow: 1, display: { xs: 'flex', md: 'left' } }}
+            
           >
             {`< `}Brunno Costa{` >`}
           </Typography>
@@ -51,7 +52,7 @@ const ResponsiveAppBar = () => {
             <Tooltip title="Acessar GitHub">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, mr: 2 }}>
                 <Link href="https://github.com/brunnogpcosta" underline="none" target="blank">
-                  <GitHubIcon style={{ color: '#fff', fontSize: 'xx-large' }} />
+                  <GitHubIcon style={{ color: '#000', fontSize: 'xx-large' }} />
                 </Link>
               </IconButton>
             </Tooltip>
@@ -59,7 +60,7 @@ const ResponsiveAppBar = () => {
             <Tooltip title="Acessar Linkedin">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Link href="https://www.linkedin.com/in/brunno-costa-a97b32160/" underline="none" target="blank">
-                  <LinkedInIcon style={{ color: '#fff', fontSize: 'xx-large' }} />
+                  <LinkedInIcon style={{ color: '#000', fontSize: 'xx-large' }} />
                 </Link>
               </IconButton>
             </Tooltip>

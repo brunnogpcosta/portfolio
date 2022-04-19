@@ -4,6 +4,11 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import Stack from '@mui/material/Stack';
 
+
+
+
+
+
 export default function MenuListComposition(props) {
   const [palavra, setPalavra] = React.useState("")
 
@@ -20,11 +25,11 @@ export default function MenuListComposition(props) {
   return (
     <Stack direction="row" spacing={2}>
       <Paper >
-        <MenuList style={{ position: 'fixed', top: '68px', bottom: '0px', width: '152px', height: '91.5%', background: '#fff', border: '1px solid #f3f8f8' }}>
+        <MenuList style={{ position: 'fixed', top: '67px', bottom: '0px', width: '152px', height: '91.5%', background: '#fff', border: '1px solid #f3f8f8' }}>
           {props.menu.map((men) => (<MenuItem
             key={men}
             value={men}
-            style={{ borderBottom: '1px solid #4747', fontWeight: 'bolder', position: 'relative', top: '0px', width: '150px', background: men == palavra ? '#ededed' : '#fff', justifyContent: 'center' }}
+            style={{ borderBottom: '1px solid #4747', fontWeight: 'bolder', position: 'relative', top: '0px', width: '150px', background: men == palavra ? '#ededed' : '#fff', justifyContent: 'left' }}
             onClick={() => handleListKeyDown(men)}>{men}
           </MenuItem>
           )

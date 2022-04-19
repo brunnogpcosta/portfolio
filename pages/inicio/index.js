@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 export default function Inicio() {
     const [item, setItem] = useState(null)
-    const [menu, setMenu] = useState(["Sobre Mim", "Item B", "Item C", "Item D", "Item E", "Item F"])
+    const [menu, setMenu] = useState(["Objetivo", "Formação", "Cursos", "Conhecimentos", "Experiência", "Sobre Mim"])
 
     return (
         <>

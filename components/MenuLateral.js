@@ -14,7 +14,7 @@ export default function MenuListComposition(props) {
 
 
   function handleListKeyDown(event) {
-    console.log(event)
+    //console.log(event)
     setPalavra(event)
     props.handleClick(event)
 
@@ -24,8 +24,10 @@ export default function MenuListComposition(props) {
 
   return (
     <Stack direction="row" spacing={2}>
+
+      
       <Paper >
-        <MenuList style={{ position: 'fixed', top: '67px', bottom: '0px', width: '152px', height: '91.5%', background: '#fff', border: '1px solid #f3f8f8' }}>
+        <MenuList style={{ position: 'fixed', top: '67px', bottom: '0px', width: '152px', height: '91.5%', background: '#fff', boxShadow: '0px 5px 5px #bababa' }}>
           {props.menu.map((men) => (<MenuItem
             key={men}
             value={men}

@@ -71,7 +71,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 
 
-const ResponsiveAppBar = () => {
+const ResponsiveAppBar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [theme, setTheme] = React.useState("")
@@ -96,12 +96,9 @@ const ResponsiveAppBar = () => {
 
   function changeTheme(){
     theme == false? setTheme(true):setTheme(false)
-    console.log(theme)
 
-
-
-
-   
+    props.handleTheme(theme)
+    //console.log(theme)
      }
 
   return (
